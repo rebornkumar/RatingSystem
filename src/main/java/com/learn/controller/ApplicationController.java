@@ -17,6 +17,5 @@ public class ApplicationController {
     @GetMapping(value = "/ride")
     public void createRide(@RequestParam int totalRide) {
         applicationDriver.start(totalRide);
-        applicationDriver.getAggregatedRating();
     }
 }

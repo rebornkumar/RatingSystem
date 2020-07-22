@@ -30,6 +30,7 @@ public class ApplicationDriver {
     public void start(int totalRide) {
         createRide(totalRide);
         startRatingSystem();
+        getAggregatedRating();
     }
     private void createRide(int totalRide) {
         for(int i = 0;i < totalRide;i++) {

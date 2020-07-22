@@ -68,7 +68,7 @@ public class RatingStrategyImpl implements RatingStrategy {
             log.error("ride with rideId : {} ,doest not exist in database or have status : {}",rideId , RideStatus.IN_PROGRESS);
         }
     }
-    private synchronized void updateAggregatedRating(int userId,int rating, UserType userType) {
+    private void updateAggregatedRating(int userId,int rating, UserType userType) {
 
         Optional<AggregatedRating> optionalAggregatedRating = aggregatedRatingRepo.findByUserId(userId);
 
